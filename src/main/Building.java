@@ -6,18 +6,9 @@ public class Building extends Room
 {
     private List <Room> rooms;
 
-    private Building(Room room, boolean ifForStudents, int quantity, int number)
+    public Building(boolean isFree, boolean ifForStudents, int quantity, int number, List<Room> rooms)
     {
-        super(ifForStudents, quantity, number);
-    }
-
-    public List<Room> getRooms()
-    {
-        return rooms;
-    }
-
-    public void setRooms(List<Room> rooms)
-    {
+        super(isFree, ifForStudents, quantity, number);
         this.rooms = rooms;
     }
 }
