@@ -73,12 +73,12 @@ public class Lesson
         this.room = room;
     }
 
-    public void addStudent(Student student)
+
+    public void printInfo()
     {
-        if(student == null)
-        {
-            //student = new ArrayList<>();
-            students.add(student);
-        }
+        System.out.println("Przedmiot: " + subjects +
+                            "Data rozpoczęcia: " + startHour +
+                            "Prowadzący: " + worker +
+                            "Sala: " + room);
     }
 }

@@ -66,4 +66,13 @@ public class Address
     {
         this.zipCode = zipCode;
     }
+
+    public void printInfo()
+    {
+        System.out.println("Miasto: " + city +
+                            "Ulica: " + street +
+                            "Numer domu: " + houseNumber +
+                            "Numer lokalu: " + apartmentNumber +
+                            "Kod pocztowy: " + zipCode);
+    }
 }
