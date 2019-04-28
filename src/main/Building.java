@@ -2,13 +2,11 @@ package main;
 
 import java.util.List;
 
-public class Building extends Room
+public class Building
 {
     private List <Room> rooms;
+    private String name;
+    private Address address;
 
-    public Building(boolean isFree, boolean ifForStudents, int quantity, int number, List<Room> rooms)
-    {
-        super(isFree, ifForStudents, quantity, number);
-        this.rooms = rooms;
-    }
+
 }
