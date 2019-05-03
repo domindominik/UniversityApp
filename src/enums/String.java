@@ -1,6 +1,6 @@
 package enums;
 
-public enum Subjects
+public enum String
 {
     SQL,
     JAVA,
@@ -12,5 +12,5 @@ public enum Subjects
     QUAKE,
     DYNA,
     WORMS_ARMAGEDON,
-    wf
+    WF
 }

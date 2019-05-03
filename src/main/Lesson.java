@@ -1,31 +1,30 @@
 package main;
 
-import enums.Subjects;
+import enums.String;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Lesson
 {
-    private Subjects subjects;
+    private String subject;
     private Date startHour;
     private List <Student> students;
-    private Worker worker;
+    private Worker lecturer;
     private Room room;
 
-    public Lesson(Subjects subjects, Date startHour, List<Student> students, Worker worker, Room room)
+    public Lesson(String subject, Date startHour, List<Student> students, Worker lecturer, Room room)
     {
-        this.subjects = subjects;
+        this.subject = subject;
         this.startHour = startHour;
         this.students = students;
-        this.worker = worker;
+        this.lecturer = lecturer;
         this.room = room;
     }
 
-    public Subjects getSubjects()
+    public String getSubject()
     {
-        return subjects;
+        return subject;
     }
 
     public Date getStartHour()
@@ -38,9 +37,9 @@ public class Lesson
         return students;
     }
 
-    public Worker getWorker()
+    public Worker getLecturer()
     {
-        return worker;
+        return lecturer;
     }
 
     public Room getRoom()
@@ -48,9 +47,9 @@ public class Lesson
         return room;
     }
 
-    public void setSubjects(Subjects subjects)
+    public void setSubject(String subject)
     {
-        this.subjects = subjects;
+        this.subject = subject;
     }
 
     public void setStartHour(Date startHour)
@@ -63,9 +62,9 @@ public class Lesson
         this.students = students;
     }
 
-    public void setWorker(Worker worker)
+    public void setLecturer(Worker lecturer)
     {
-        this.worker = worker;
+        this.lecturer = lecturer;
     }
 
     public void setRoom(Room room)
@@ -73,12 +72,11 @@ public class Lesson
         this.room = room;
     }
 
-
     public void printInfo()
     {
-        System.out.println("Przedmiot: " + subjects +
+        System.out.println("Przedmiot: " + subject +
                             "Data rozpoczęcia: " + startHour +
-                            "Prowadzący: " + worker +
+                            "Prowadzący: " + lecturer +
                             "Sala: " + room);
     }
 }

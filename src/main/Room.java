@@ -4,15 +4,15 @@ public class Room
 {
     private boolean isFree;
     private boolean ifForStudents;
-    private int quantity;
+    private int quantityOfSets;
     private int number;
 
 
-    public Room(boolean isFree, boolean ifForStudents, int quantity, int number)
+    public Room(boolean isFree, boolean ifForStudents, int quantityOfSets, int number)
     {
         this.isFree = isFree;
         this.ifForStudents = ifForStudents;
-        this.quantity = quantity;
+        this.quantityOfSets = quantityOfSets;
         this.number = number;
     }
 
@@ -26,9 +26,9 @@ public class Room
         return ifForStudents;
     }
 
-    public int getQuantity()
+    public int getQuantityOfSets()
     {
-        return quantity;
+        return quantityOfSets;
     }
 
     public int getNumber()
@@ -46,9 +46,9 @@ public class Room
         this.ifForStudents = ifForStudents;
     }
 
-    public void setQuantity(int quantity)
+    public void setQuantityOfSets(int quantityOfSets)
     {
-        this.quantity = quantity;
+        this.quantityOfSets = quantityOfSets;
     }
 
     public void setNumber(int number)
@@ -58,9 +58,10 @@ public class Room
 
     public void printInfo()
     {
-        System.out.println("Jest wolna; "+ isFree +
-                            "Dla studentów: "+ ifForStudents+
-                            "Numer sali: " + number+
-                            "Ilość miejsc: " + quantity);
+        System.out.println("Jest wolna: "+ isFree +
+                            ", Dla studentow: "+ ifForStudents+
+                            ", Numer sali: " + number+
+                            ", Ilość miejsc: " + quantityOfSets +
+                            "\n\n");
     }
 }

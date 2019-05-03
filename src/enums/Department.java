@@ -1,6 +1,6 @@
 package enums;
 
-public enum Departments
+public enum Department
 {
     KOSMETOLOGIA,
     TIPSY,
