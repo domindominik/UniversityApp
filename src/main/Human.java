@@ -4,7 +4,7 @@ import enums.Sex;
 
 import java.util.Date;
 
-public class Human
+public abstract class Human
 {
     private Address address;
     private String name;

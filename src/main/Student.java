@@ -1,6 +1,5 @@
 package main;
 
-import enums.Department;
 import enums.Sex;
 
 import java.util.Date;
@@ -8,13 +7,14 @@ import java.util.List;
 
 public class Student extends Human
 {
-    private Department department;
+    private main.Department department;
     private double tuition;
     private boolean isStuding;
     private List <StudentPlan> studentPlans;
     private Index index;
+    private int semester;
 
-    public Student(Address address, String name, String surname, Date dateOfBirth, Sex sex, Department department, double tuition, boolean isStuding, List<StudentPlan> studentPlans, Index index)
+    public Student(Address address, String name, String surname, Date dateOfBirth, Sex sex, Department department, double tuition, boolean isStuding, List<StudentPlan> studentPlans, Index index, int semester)
     {
         super(address, name, surname, dateOfBirth, sex);
         this.department = department;
@@ -22,6 +22,7 @@ public class Student extends Human
         this.isStuding = isStuding;
         this.studentPlans = studentPlans;
         this.index = index;
+        this.semester = semester;
     }
 
     public Department getDepartment()
@@ -49,6 +50,11 @@ public class Student extends Human
         return index;
     }
 
+    public int getSemester()
+    {
+        return semester;
+    }
+
     public void setDepartment(Department department)
     {
         this.department = department;
@@ -72,6 +78,11 @@ public class Student extends Human
     public void setIndex(Index index)
     {
         this.index = index;
+    }
+
+    public void setSemester(int semester)
+    {
+        this.semester = semester;
     }
 
     public void printInfo()

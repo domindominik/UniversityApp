@@ -10,9 +10,13 @@ public class Menu
 {
     public static void main(String[] args)
     {
+
+
         Address address1 = new Address("Breslau", "Jaracza", "6", "9", "51-100");
 
         Worker monia = new Worker(address1,"Monia", "Zysia", null, Sex.FEMALE, WorkerType.DOCTOR, 25678.02, null, null);
+
+
 
         Student magda = new Student(new Address("wawa", "Domaniewska", "69", "69", "00-001"), "Madzia", "Blondyna", null, Sex.FEMALE, Department.TIPSY, 2154, true, null, null  );
 
