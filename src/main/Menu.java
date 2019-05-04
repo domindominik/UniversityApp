@@ -12,6 +12,8 @@ public class Menu
 {
     public static void main(String[] args)
     {
+        Room room = new Room(true, true, 123, 666);
+
         List<Subject> subjects =new ArrayList<>();
         List<Lesson> lessons = new ArrayList<>();
         List<Student> students = new ArrayList<>();
@@ -29,15 +31,16 @@ public class Menu
         //Student magda = new Student(new Address("wawa", "Domaniewska", "69", "69", "00-001"), "Madzia", "Blondyna", null, Sex.FEMALE, Department.KELNERKA, 2154, true, null, null  );
 
         Worker stefcio = new Worker(new Address("Wawa", "Mokotowska", "23", "1a", "01-002"), "Stefanek", "Papieski", null, Sex.MALE, WorkerType.PROFESSOR,45219.02,null,null);
+        Subject subject = new Subject(stefcio, "Tipsy", 96);
+        Worker lecturer = new Worker(address1, "Ojciec", "Dyrektor", dateOfBirth, Sex.MIX, WorkerType.PROFESSOR, 988984.11, null, null);
 
+        Lesson lesson = new Lesson(subject, null, students, lecturer, room);
        // main.Department tips = new main.Department("Tipsy", stefcio,);
 
-        Room room = new Room(true, true, 123, 666);
         Building building = new Building(null, "Puncher", new Address("wawa", "chwdp", "666", "1", "00-001"));
         Building building2 = new Building(null, "Puncher", new Address("wawa", "chwdp", "666", "1", "00-001"));
 
         //Worker proffesor = new Worker("Breslau","Maria", "Marianna", null, Sex.MIX, WorkerType.PROFESSOR, 84444, null, null, );
-
 
 
         Student sandra = new Student(address2, "Sandra", "Buldog", dateOfBirth, Sex.FEMALE, department, 54741.19, true, null, null, 2);
@@ -58,6 +61,7 @@ public class Menu
                     stefcio.printinfo();
                     monia.printinfo();
                     proffesor.printinfo();
+                    lecturer.printinfo();
                     break;
 
                 case 3:
