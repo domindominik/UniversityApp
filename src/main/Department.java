@@ -10,8 +10,9 @@ public class Department
     private List<Student> students;
     private List<Lesson> lessons;
     private int quantityOfSemesters;
+    private List<Subject> subjects;
 
-    public Department(String name, Worker professor, List<Worker> doctors, List<Student> students, List<Lesson> lessons, int quantityOfSemesters)
+    public Department(String name, Worker professor, List<Worker> doctors, List<Student> students, List<Lesson> lessons, int quantityOfSemesters, List<Subject> subjects)
     {
         this.name = name;
         this.professor = professor;
@@ -19,6 +20,7 @@ public class Department
         this.students = students;
         this.lessons = lessons;
         this.quantityOfSemesters = quantityOfSemesters;
+        this.subjects = subjects;
     }
 
     public String getName()
@@ -51,6 +53,11 @@ public class Department
         return quantityOfSemesters;
     }
 
+    public List<Subject> getSubjects()
+    {
+        return subjects;
+    }
+
     public void setName(String name)
     {
         this.name = name;
@@ -79,5 +86,9 @@ public class Department
     public void setQuantityOfSemesters(int quantityOfSemesters)
     {
         this.quantityOfSemesters = quantityOfSemesters;
+    }
+
+    public void setSubjects(List<Subject> subjects) {
+        this.subjects = subjects;
     }
 }

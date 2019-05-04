@@ -1,6 +1,6 @@
 package enums;
 
-public enum String
+public enum Subject2
 {
     SQL,
     JAVA,

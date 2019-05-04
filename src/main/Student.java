@@ -94,7 +94,7 @@ public class Student extends Human
                 ", Zdobyte zaliczenia: " + index +
                 ", Adres słuchacza: " + getAddress() +
                 ", Imię studenta: " + getName() +
-                ", Nazwisko studenta" + getSurname() +
+                ", Nazwisko studenta " + getSurname() +
                 ", Data urodzenia: " + getDateOfBirth() +
                 "\n\n");
     }

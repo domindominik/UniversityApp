@@ -1,19 +1,18 @@
 package main;
 
-import enums.String;
 
 import java.util.Date;
 import java.util.List;
 
 public class Lesson
 {
-    private String subject;
+    private Subject subject;
     private Date startHour;
     private List <Student> students;
     private Worker lecturer;
     private Room room;
 
-    public Lesson(String subject, Date startHour, List<Student> students, Worker lecturer, Room room)
+    public Lesson(Subject subject, Date startHour, List<Student> students, Worker lecturer, Room room)
     {
         this.subject = subject;
         this.startHour = startHour;
@@ -22,7 +21,7 @@ public class Lesson
         this.room = room;
     }
 
-    public String getSubject()
+    public Subject getSubject()
     {
         return subject;
     }
@@ -47,7 +46,7 @@ public class Lesson
         return room;
     }
 
-    public void setSubject(String subject)
+    public void setSubject(Subject subject)
     {
         this.subject = subject;
     }
