@@ -61,10 +61,10 @@ public class Worker extends Human
         this.workerGraphic = workerGraphic;
     }
 
-    public void printinfo()
+    public void printInfo()
     {
         System.out.println("Imię pracownika: " + getName() +
-                ", Nazwiskopracownika: " + getSurname() +
+                ", Nazwisko pracownika: " + getSurname() +
                 ", Data urodzenia: " + getDateOfBirth() +
                 ", Płeć: " + getSex() +
                 ", Typ pracownika: " + workerType +

@@ -80,4 +80,9 @@ public class University
     {
         this.buildings = buildings;
     }
+
+    public void printInfo()
+    {
+        System.out.println("Nazwa uniwersytetu: "+ name);
+    }
 }
