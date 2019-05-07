@@ -61,6 +61,11 @@ public class Lesson
         this.students = students;
     }
 
+    public void addStudent(Student student)
+    {
+        students.add(student);
+    }
+
     public void setLecturer(Worker lecturer)
     {
         this.lecturer = lecturer;

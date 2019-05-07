@@ -73,14 +73,28 @@ public class Department
         this.doctors = doctors;
     }
 
+    public void addDoctor(Worker doctor)
+    {
+        doctors.add(doctor);
+    }
+
     public void setStudents(List<Student> students)
     {
         this.students = students;
     }
 
+    public void addStudent(Student student)
+    {
+        students.add(student);
+    }
+
     public void setLessons(List<Lesson> lessons)
     {
         this.lessons = lessons;
+    }
+    public void addLesson(Lesson lesson)
+    {
+        lessons.add(lesson);
     }
 
     public void setQuantityOfSemesters(int quantityOfSemesters)
@@ -90,6 +104,11 @@ public class Department
 
     public void setSubjects(List<Subject> subjects) {
         this.subjects = subjects;
+    }
+
+    public void addSubject(Subject subject)
+    {
+        subjects.add(subject);
     }
 
     public void printInfo()

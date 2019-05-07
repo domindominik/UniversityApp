@@ -61,6 +61,11 @@ public class University
         this.departments = departments;
     }
 
+    public void addDepartment(Department department)
+    {
+        departments.add(department);
+    }
+
     public void setAddress(Address address)
     {
         this.address = address;
@@ -81,9 +86,19 @@ public class University
         this.workers = workers;
     }
 
+    public void addWorker(Worker worker)
+    {
+        workers.add(worker);
+    }
+
     public void setBuildings(List<Building> buildings)
     {
         this.buildings = buildings;
+    }
+
+    public void addBuilding(Building building)
+    {
+        buildings.add(building);
     }
 
     public void printInfo()

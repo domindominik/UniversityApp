@@ -43,6 +43,11 @@ public class Index
         this.smallIndices = smallIndices;
     }
 
+    public void addSmallIndex(SmallIndex smallIndex)
+    {
+        smallIndices.add(smallIndex);
+    }
+
     public void setSemestr(int semestr)
     {
         this.semestr = semestr;

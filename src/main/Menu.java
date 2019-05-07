@@ -2,6 +2,7 @@ package main;
 
 import enums.Sex;
 import enums.WorkerType;
+import file.SaveToFile;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -69,6 +70,10 @@ public class Menu
 
         University university = new University("WSHR", departments, address1, students, workers, buildings);
         students.add(new Student(address1, "Jola", "Fit", dateOfBirth, Sex.MIX, tipsy, 9987458, true, null, null, 1));
+
+        SaveToFile saveToFile = new SaveToFile(university);
+
+
         Scanner getAction = new Scanner(System.in);
         while (true)
         {
@@ -109,11 +114,11 @@ public class Menu
                                 System.out.println("3");
                                 break;
 
-                                default:
-                                    break;
+
                         }
 
                     }
+                    //break;
 
 
                 case 3:
@@ -137,7 +142,36 @@ public class Menu
                     break;
 
                 case 8:
-                    break;
+                    while (true)
+                    {
+                        System.out.println("Lista profesorów: 1 \t Lista doktorów: 2 \t Lista masterów: 3 \t Exit: 0");
+                        int action3 = getAction.nextInt();
+
+                        switch (action3)
+                        {
+                            case 1:
+                                for (Worker worker: proffesors)
+                                {
+                                    worker.printInfo();
+                                }
+                                break;
+
+                            case 2:
+                                for (Worker worker: doctors)
+                                {
+                                    worker.printInfo();
+                                }
+                                break;
+                            case 3:
+                                System.out.println("3");
+                                break;
+
+                            default:
+                                break;
+                        }
+
+                    }
+                   // break;
 
 
                     default:
@@ -147,7 +181,7 @@ public class Menu
 
 
             }
-            break;
+            //break;
         }
     }
 }

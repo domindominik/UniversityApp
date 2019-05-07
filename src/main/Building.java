@@ -35,6 +35,11 @@ public class Building
         this.rooms = rooms;
     }
 
+    public void addRoom(Room room)
+    {
+        rooms.add(room);
+    }
+
     public void setName(String name)
     {
         this.name = name;
