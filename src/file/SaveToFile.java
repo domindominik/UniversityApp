@@ -5,7 +5,7 @@ import main.University;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
-import java.io.PrintWriter;
+
 
 public class SaveToFile
 {
@@ -30,6 +30,7 @@ public class SaveToFile
         catch (Exception e)
         {
             System.out.println("Error!");
+            e.printStackTrace();
         }
 
 

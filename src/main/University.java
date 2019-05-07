@@ -71,6 +71,11 @@ public class University
         this.students = students;
     }
 
+    public void AddStudent(Student student)
+    {
+        students.add(student);
+    }
+
     public void setWorkers(List<Worker> workers)
     {
         this.workers = workers;
@@ -83,6 +88,27 @@ public class University
 
     public void printInfo()
     {
-        System.out.println("Nazwa uniwersytetu: "+ name);
+        System.out.println("Nazwa uniwersytetu: "+ name +
+                ", Miasto: " + address.getCity() +
+                ", Ulica: " + address.getStreet() +
+                ", Numer budynku: " + address.getHouseNumber() +
+                ", Kod pocztowy: " + address.getZipCode());
+
+        System.out.println("Lista kierunków:");
+        for (Department department: departments)
+        {
+            department.printInfo();
+        }
+        System.out.println("Lista studentów:");
+        for (Student student: students)
+        {
+            student.printInfo();
+        }
+
+        System.out.println("Lista pracowników:");
+        for (Worker worker: workers)
+        {
+            worker.printInfo();
+        }
     }
 }

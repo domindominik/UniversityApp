@@ -91,4 +91,11 @@ public class Department
     public void setSubjects(List<Subject> subjects) {
         this.subjects = subjects;
     }
+
+    public void printInfo()
+    {
+        System.out.println("Nazwa kierunku: " + name +
+                ", Profesor prowadzący: " + professor +
+                ", Ilość semestrów: " + quantityOfSemesters);
+    }
 }

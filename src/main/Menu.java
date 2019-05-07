@@ -47,7 +47,7 @@ public class Menu
         Building building = new Building(null, "Puncher", new Address("wawa", "chwdp", "666", "1", "00-001"));
         Building building2 = new Building(null, "Puncher", new Address("wawa", "chwdp", "666", "1", "00-001"));
 
-        //Worker proffesor = new Worker("Breslau","Maria", "Marianna", null, Sex.MIX, WorkerType.PROFESSOR, 84444, null, null, );
+
 
 
         SmallIndex smallIndex = new SmallIndex(subject, lecturer, null, 5.5);
@@ -68,7 +68,7 @@ public class Menu
         workers.add(stefcio);
 
         University university = new University("WSHR", departments, address1, students, workers, buildings);
-
+        students.add(new Student(address1, "Jola", "Fit", dateOfBirth, Sex.MIX, tipsy, 9987458, true, null, null, 1));
         Scanner getAction = new Scanner(System.in);
         while (true)
         {
@@ -147,7 +147,7 @@ public class Menu
 
 
             }
-            //break;
+            break;
         }
     }
 }
