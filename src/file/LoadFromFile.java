@@ -16,7 +16,7 @@ public class LoadFromFile
         this.university = university;
     }
 
-    public void LoadFromFile()
+    public void loadFromFile()
     {
         try
         {

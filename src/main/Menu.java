@@ -72,7 +72,7 @@ public class Menu
         students.add(new Student(address1, "Jola", "Fit", dateOfBirth, Sex.MIX, tipsy, 9987458, true, null, null, 1));
 
         SaveToFile saveToFile = new SaveToFile(university);
-
+        saveToFile.saveToFile();
 
         Scanner getAction = new Scanner(System.in);
         while (true)

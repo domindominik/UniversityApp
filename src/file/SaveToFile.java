@@ -16,11 +16,11 @@ public class SaveToFile
         this.university = university;
     }
 
-    public void SaveToFile()
+    public void saveToFile()
     {
         try
         {
-            File universityDat = new File("universityDat.dat");
+            File universityDat = new File("/home/dominik/Pobrane/studentdata.txt");
             ObjectOutputStream objectUniversity = new ObjectOutputStream(new FileOutputStream(universityDat));
 
             objectUniversity.writeObject(university);
